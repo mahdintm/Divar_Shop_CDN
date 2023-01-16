@@ -3,6 +3,7 @@ import path from "path";
 export const router = Router();
 
 router.post("/upload", (req, res) => {
+  console.log(1)
   const { files } = req.files;
   if (!files) return res.sendStatus(400);
   const fileName = Date.now() * 2 + path.parse(files.name).ext;
