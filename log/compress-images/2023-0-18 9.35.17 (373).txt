@@ -1,0 +1,7 @@
+File from: [public/upload/mahdi.{jpg,JPG,jpeg,JPEG,png,svg,gif}]
+
+File to: [public/min/mahdi.{jpg,JPG,jpeg,JPEG,png,svg,gif}]
+
+Compression algorithm: [-]
+
+Description: File does not exist!

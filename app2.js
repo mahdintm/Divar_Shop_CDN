@@ -22,5 +22,6 @@ app.use(
 // );
 app.use(express.static("public"));
 app.use(cors("https://shop.agahpardazan.ir"));
+// app.use(cors("http://localhost:3000"));
 app.use(router);
 app.listen(3002, () => console.log(`Server running in CDN mode on port ${3002}`));
