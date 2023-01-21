@@ -8,7 +8,7 @@ router.post("/upload", (req, res) => {
   if (!files) return res.sendStatus(400);
   const fileName = Date.now() * 2 + path.parse(files.name).ext;
   files.mv("public/upload/" + fileName);
-  res.send(JSON.stringify({ name: fileName }));
+  res.send({ name: fileName });
 });
 
 // router.get("/private",(req,res)=>{
