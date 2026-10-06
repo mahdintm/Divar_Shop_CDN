@@ -21,7 +21,8 @@ app.use(
 //   })
 // );
 app.use(express.static("public"));
-app.use(cors({ origin: "https://shop.agahpardazan.ir" }));
+const CORS_ORIGIN = process.env.CORS_ORIGIN || "https://shop.agahpardazan.ir";
+app.use(cors({ origin: CORS_ORIGIN }));
 // app.use(cors("http://localhost:3000"));
 app.use(router);
 const PORT = process.env.PORT || 3002;
