@@ -8,7 +8,6 @@
     "imagemin": "^8.0.1",
     "imagemin-mozjpeg": "^10.0.0",
     "nodemon": "^2.0.20",
-    "path": "^0.12.7",
     "pngquant-bin": "^6.0.1"
   },
   "scripts": {
