@@ -24,4 +24,5 @@ app.use(express.static("public"));
 app.use(cors({ origin: "https://shop.agahpardazan.ir" }));
 // app.use(cors("http://localhost:3000"));
 app.use(router);
-app.listen(3002, () => console.log(`Server running in CDN mode on port ${3002}`));
+const PORT = process.env.PORT || 3002;
+app.listen(PORT, () => console.log(`Server running in CDN mode on port ${PORT}`));
