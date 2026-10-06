@@ -7,11 +7,14 @@
     "gifsicle": "^5.2.1",
     "imagemin": "^8.0.1",
     "imagemin-mozjpeg": "^10.0.0",
-    "nodemon": "^2.0.20",
     "pngquant-bin": "^6.0.1"
   },
   "scripts": {
-    "start": "nodemon app2"
+    "start": "node app2",
+    "dev": "nodemon app2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
