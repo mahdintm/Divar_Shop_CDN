@@ -5,6 +5,7 @@ export const router = Router();
 router.post("/upload", async (req, res) => {
   const files = req.files?.files;
   if (!files || Array.isArray(files)) return res.sendStatus(400);
+  if (!files.size) return res.sendStatus(400);
 
   const extensionByMimeType = {
     "image/jpeg": ".jpg",
