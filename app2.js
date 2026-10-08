@@ -6,6 +6,9 @@ const app = express();
 app.use(
   fileUpload({
     createParentPath: true,
+    limits: {
+      fileSize: 10 * 1024 * 1024,
+    },
   })
 );
 // app.use(
