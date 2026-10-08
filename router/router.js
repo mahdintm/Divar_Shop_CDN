@@ -41,7 +41,7 @@ const hasValidImageSignature = (data, mimeType) => {
 router.post("/upload", async (req, res) => {
   const files = req.files?.files;
   if (!files || Array.isArray(files)) return res.sendStatus(400);
-  if (!files.size) return res.sendStatus(400);
+  if (!files.size || files.truncated) return res.sendStatus(413);
 
   const extensionByMimeType = {
     "image/jpeg": ".jpg",
